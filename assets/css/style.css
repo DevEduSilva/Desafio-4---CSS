@@ -9,10 +9,13 @@
 h1,
 h2 {
   font-family: "Luckiest Guy", cursive;
+  text-align: center;
 }
 
 img {
+  width: 85%;
   max-width: 100%;
+  margin: auto;
 }
 
 /* ---------------- HEADER ---------------- */
@@ -24,35 +27,98 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  gap: 20px;
-  height: 40vh;
-  padding: 30px;
+  gap: 1.5rem;
+  min-height: 45vh;
+  padding: 3rem 5% 2rem 5%;
   color: #fff;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 header h1 {
-  width: 60%;
+  text-align: start;
+  width: 85%;
+  max-width: 600px; 
   letter-spacing: 2px;
   font-weight: 200;
+  font-size: 2rem; 
 }
 
 .btnContainer {
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: 0.75rem; 
+  width: 100%;
 }
 
 .btn {
-  padding: 15px;
+  padding: 0.8rem 1.2rem;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
 .black {
-  padding: 10px;
   background-color: #23272a;
   color: white;
+}
+
+/* ---------------- SECTION ---------------- */
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem 5%;
+  gap: 1.5rem;
+  margin: 1rem 0 0 0;
+  align-items: center;
+  text-align: start;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.infoContainer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  flex-grow: 1; /* IMPORTANTE PARA DISTRIBUIR DE FORMA INTELIGENTE */
+  padding-bottom: 1.5rem;
+}
+
+.inverseSection {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f6f6f6;
+  padding: 2rem 5%;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.reverseInformation {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  padding-top: 2rem;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  display: flex;
+  background-color: #23272a;
+  margin: 0 auto;
+}
+
+footer img {
+  width: 30%;
+  padding: 20px;
 }
